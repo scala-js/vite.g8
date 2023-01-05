@@ -16,11 +16,3 @@ lazy val root = project
 
     libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "2.3.0",
   )
-
-def linkerOutputDirectory(v: Attributed[org.scalajs.linker.interface.Report]): File = {
-  v.get(scalaJSLinkerOutputDirectory.key).getOrElse {
-    throw new MessageOnlyException(
-        "Linking report was not attributed with output directory. " +
-        "Please report this as a Scala.js bug.")
-  }
-}
