@@ -5,7 +5,7 @@ lazy val root = project
   .enablePlugins(ScalaJSPlugin)
   .settings(
     name := "$name$",
-    scalaVersion := "3.2.0",
+    scalaVersion := "3.2.2",
     scalacOptions ++= Seq("-encoding", "utf-8", "-deprecation", "-feature"),
 
     scalaJSUseMainModuleInitializer := true,
@@ -14,5 +14,5 @@ lazy val root = project
         .withModuleSplitStyle(ModuleSplitStyle.SmallModulesFor(List("example")))
     },
 
-    libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "2.3.0",
+    libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "2.4.0",
   )
