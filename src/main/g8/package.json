@@ -9,6 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "vite": "^3.2.4"
+    "@scala-js/vite-plugin-scalajs": "^1.0.0",
+    "vite": "^4.1.0"
   }
 }
